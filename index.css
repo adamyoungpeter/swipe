@@ -786,6 +786,18 @@ p {
     }
 }
 
+@media only screen and (max-width: 950px) {
+
+    .virtual-events-section .swipe-sessions-card .card-top {
+        justify-content: flex-start;
+    }
+
+    #sessions-logo {
+        width: 250px;
+        margin: 0 0 0 var(--spacing-xl);
+    }
+}
+
 @media only screen and (max-width: 850px) {
     .partners-grid img {
         width: 100%;
@@ -798,6 +810,19 @@ p {
 
     .integrations-section .col-right {
         width: 40%;
+    }
+
+    .getting-started-section .two-column {
+        align-items: center;
+    }
+
+    .getting-started-section .col-right {
+        flex-wrap: wrap;
+    }
+
+    .getting-started-section .col-right .card {
+        width: 100%;
+        margin: var(--spacing-md) 0;
     }
 }
 
@@ -830,6 +855,45 @@ p {
         margin: var(--spacing-md) 0;
     }
 
+    .global-section .card-container {
+        flex-wrap: wrap;
+        margin: var(--spacing-xl) 0;
+    }
+
+    .global-section .card-container .card {
+        width: 50%;
+        margin: var(--spacing-md) 0;
+    }
+
+    #sessions-logo {
+        margin: 0 0 0 calc(var(--spacing-xl) - 5px);
+        width: 200px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .footer .section-container {
+        flex-wrap: wrap;
+    }
+
+    .footer .col {
+        width: 50%;
+        margin: var(--spacing-md) 0;
+    }
+
+    .footer .col a {
+        font-size: 12px;
+    }
+
+    #footer-logo {
+        width: 70px;
+    }
+
+    .footer .icon-link img {
+        width: 18px;
+    }
 }
 
 /*MOBILE SIZE*/
@@ -866,5 +930,31 @@ p {
 
     .why-swipe-section .card-container .card .icon {
         height: 40px;
+    }
+
+    .global-section .card-container .card {
+        width: 100%;
+        margin: var(--spacing-sm) 0;
+    }
+
+    #globe {
+        opacity: 10%;
+    }
+
+    .virtual-events-section .swipe-sessions-card {
+        margin: var(--spacing-lg) 0;
+        width: 100%;
+    }
+
+    .virtual-events-section .swipe-sessions-card .secondary-text {
+        width: 100%;
+    }
+
+    .virtual-events-section .swipe-sessions-card .card-top {
+        height: 40%;
+    }
+
+    #sessions-logo {
+        width: 250px;
     }
 }

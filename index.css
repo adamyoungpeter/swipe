@@ -272,6 +272,7 @@ p {
     max-width: var(--standard-width);
     padding: 0 var(--spacing-md);
     margin: 0 0 var(--spacing-xl) 0;
+    box-sizing: border-box;
 }
 
 .menu {
@@ -297,6 +298,10 @@ p {
 
 .navbar-button:hover {
     background: rgba(250, 250, 250, 0.5);
+}
+
+.hamburger-button {
+    display: none;
 }
 
 /*ANIMATED GRADIENT*/
@@ -859,8 +864,34 @@ p {
         --h6-size: 16px;
     }
 
+    .navbar .menu {
+        display: none;
+    }
+
+    .navbar .navbar-button {
+        display: none;
+    }
+
+    .hamburger-button {
+        width: 50px;
+        height: 30px;
+        background-color: rgba(250, 250, 250, 0.25);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamburger-button .bar {
+        width: 18px;
+        height: 2px;
+        background-color: var(--bg-white);
+        margin: 2px 0;
+    }
+
     .navbar {
-        margin: 0;
+        margin: var(--spacing-sm) 0 var(--spacing-lg) 0;
     }
 
     #gradient-canvas {
@@ -898,6 +929,10 @@ p {
 
     .integrations-section .card-container .card {
         width: 100%;
+    }
+
+    .why-swipe-section {
+        padding: var(--spacing-lg) 0 var(--spacing-xl) 0;
     }
 
     .why-swipe-section .card-container {
@@ -992,12 +1027,28 @@ p {
         grid-template-columns: 1fr 1fr;
     }
 
+    .unified-platform-section {
+        padding: var(--spacing-md) 0;
+    }
+
+    .integrations-section {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .integrations-section::before {
+        height: 875px;
+    }
+
     .unified-platform-section h2 {
         width: 100%;
     }
 
     .integrations-section .col-right {
         display: none;
+    }
+
+    .why-swipe-section {
+        padding: var(--spacing-xl) 0;
     }
 
     .why-swipe-section .card-container .card {
@@ -1009,6 +1060,14 @@ p {
         height: 40px;
     }
 
+    .global-section {
+        padding: var(--spacing-xl) 0 0 0;
+    }
+
+    .global-section .card-container {
+        margin: var(--spacing-md) 0;
+    }
+
     .global-section .card-container .card {
         width: 100%;
         margin: var(--spacing-sm) 0;
@@ -1016,6 +1075,10 @@ p {
 
     #globe {
         opacity: 10%;
+    }
+
+    .virtual-events-section {
+        padding: 0;
     }
 
     .virtual-events-section .swipe-sessions-card {
@@ -1033,5 +1096,9 @@ p {
 
     #sessions-logo {
         width: 250px;
+    }
+
+    .getting-started-section {
+        padding: var(--spacing-md) 0;
     }
 }
